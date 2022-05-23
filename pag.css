@@ -1,3 +1,4 @@
+/* -------------------------------- Setting -----------------------------------*/
 :root {
   --background-color: black;
   --font-color: white;
@@ -20,6 +21,7 @@ body {
   font-family: "Lato", sans-serif;
   font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
+  transition: 0.2s;
 }
 
 /* -------------------------------- HEADER ---------------------------------- */
@@ -35,15 +37,20 @@ header {
 }
 .caixa {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .caixa li {
   display: inline-block;
   margin: 0 20px;
+  transition: 0.1s;
+  
 }
 .caixa li:hover {
+  transition:  0.5s;
   transform: scale(1.4);
+
+
 }
 
 .caixa li a {
@@ -56,6 +63,7 @@ header {
   /*border: 1px solid;
   border-radius: 5px;*/
 }
+
 
 /*----------------------------------- BODY -------------------------------------------*/
 
@@ -181,15 +189,15 @@ label .ball {
   background-color: var(--background-color);
   position: absolute;
   position: left;
-  top: 6px;
-  left: 12px;
-
-  height: 25px;
-  width: 25px;
 
   transform: translateX(0px);
+  transition: 0.5s;
 }
 
 .checkbox:checked + label .ball {
-  transform: translateX(45px);
+  transform: translateX(left);
+}
+
+label i {
+  color: var(--background-color);
 }
