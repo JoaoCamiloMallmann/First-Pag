@@ -41,6 +41,7 @@ header {
   align-items: center;
 }
 .caixa li {
+  align-items: center;
   display: inline-block;
   margin: 0 20px;
   transition: 0.1s;
@@ -49,9 +50,11 @@ header {
 .caixa li:hover {
   transition:  0.5s;
   transform: scale(1.4);
-
-
 }
+nav i{
+  color: var(--font-color);
+}
+
 
 .caixa li a {
   font-size: 25px;
