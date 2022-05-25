@@ -45,16 +45,14 @@ header {
   display: inline-block;
   margin: 0 20px;
   transition: 0.1s;
-  
 }
 .caixa li:hover {
-  transition:  0.5s;
+  transition: 0.5s;
   transform: scale(1.4);
 }
-nav i{
+nav i {
   color: var(--font-color);
 }
-
 
 .caixa li a {
   font-size: 25px;
@@ -66,7 +64,6 @@ nav i{
   /*border: 1px solid;
   border-radius: 5px;*/
 }
-
 
 /*----------------------------------- BODY -------------------------------------------*/
 
@@ -204,9 +201,9 @@ label .ball {
 label i {
   color: var(--background-color);
 }
-.fa-moon{
-  color: blue;
+.fa-moon {
+  color: darkblue;
 }
-.fa-sun{
+.fa-sun {
   color: yellow;
 }
