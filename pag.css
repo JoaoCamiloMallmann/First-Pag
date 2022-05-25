@@ -204,3 +204,9 @@ label .ball {
 label i {
   color: var(--background-color);
 }
+.fa-moon{
+  color: blue;
+}
+.fa-sun{
+  color: yellow;
+}
