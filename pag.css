@@ -8,7 +8,7 @@
 }
 
 .light-mode:root {
-  --background-color: whitesmoke;
+  --background-color: yellow;
   --font-color: black;
   --border-color: black;
   --backgorud-gifs: #f0f0f0;
