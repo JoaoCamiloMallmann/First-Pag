@@ -39,9 +39,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 .caixa li {
-  align-items: center;
   display: inline-block;
   margin: 0 20px;
   transition: 0.1s;
@@ -51,7 +51,9 @@ header {
   transform: scale(1.4);
 }
 nav i {
+  align-content: center;
   color: var(--font-color);
+  
 }
 
 .caixa li a {
