@@ -42,6 +42,9 @@ header {
   align-items: center;
 }
 
+.Sites{
+  margin-right: 10px;
+}
 .caixa i {
   display: none;
   align-content: center;
@@ -51,24 +54,42 @@ header {
 
 .caixa li {
   display: inline-block;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 30px;
   transition: 0.1s;
   flex-wrap: wrap;
 }
 .caixa li:hover {
   transition: 0.5s;
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 .caixa li a {
+  position: relative;
   font-size: 25px;
   color: var(--font-color);
   text-decoration: none;
   font-weight: bold;
-  padding: 4px;
   text-transform: uppercase;
   /*border: 1px solid;
   border-radius: 5px;*/
+}
+
+.caixa li a::before {
+  content: "";
+  bottom: 0px;
+  position: absolute;
+  height: 3px;
+  background: var(--border-color);
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+.caixa li a:hover:before {
+  width: 100%;
+}
+.caixa li.center a:hover:before{
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 /*----------------------------------- BODY -------------------------------------------*/
@@ -112,7 +133,7 @@ header {
   box-shadow: 5px 8px 0 3px var(--border-color);
 }
 .elementos:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .tamanho {
@@ -218,12 +239,11 @@ label i {
 
 /* ------------------------------- SMARTHONE ----------------------------------------- */
 
-@media (max-width: 700px) {
- 
-  .caixa{
+@media (max-width: 650px) {
+  .caixa {
     margin-right: 10;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .caixa i {
@@ -232,12 +252,10 @@ label i {
     color: var(--font-color);
     cursor: pointer;
   }
-  .caixa nav{
+  .caixa nav {
     display: none;
   }
-  .caixa img{
-    display: none;
+  .caixa img {
+    display: inline-block;
   }
-  
-
 }
