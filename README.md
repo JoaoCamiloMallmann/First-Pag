@@ -1,7 +1,7 @@
 <h1>Primeira Pagina</h1>
 
 ```
-> Objetivo: Estudar HTML e CSS Com a Crião De Um Site
+> Objetivo: Estudar HTML e CSS Com a Criação De Um Site
 ```
 
 <p>Metas: 
