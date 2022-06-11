@@ -21,7 +21,7 @@ body {
   font-family: "Lato", sans-serif;
   font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 /* -------------------------------- HEADER ---------------------------------- */
@@ -81,14 +81,14 @@ header {
   height: 3px;
   background: var(--border-color);
   border-radius: 50px;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 .caixa li a:hover:before {
   width: 100%;
 }
 .caixa li.center a:hover:before{
-  left: 50%;
-  transform: translateX(-50%);
+  left: 55%;
+  transform: translateX(-55%);
 
 }
 
