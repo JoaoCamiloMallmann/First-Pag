@@ -42,12 +42,13 @@ header {
   align-items: center;
 }
 
-.caixa .menu{
-display: none;
+.caixa .menu {
+  display: none;
 }
-.Sites{
+.Sites {
   margin-right: 10px;
 }
+
 .caixa i {
   display: none;
   align-content: center;
@@ -89,10 +90,9 @@ display: none;
 .caixa li a:hover:before {
   width: 100%;
 }
-.caixa li.center a:hover:before{
+.caixa li.center a:hover:before {
   left: 55%;
   transform: translateX(-55%);
-
 }
 
 /*----------------------------------- BODY -------------------------------------------*/
@@ -160,6 +160,11 @@ display: none;
   color: var(--font-color);
   font-size: 30px;
   font-weight: 600;
+  
+}
+
+#LogoMenu:checked ~ .caixa nav {
+  left: 100%;
 }
 
 /*----------------------------------- FOOTER -------------------------------------------*/
@@ -255,13 +260,31 @@ footer .fa-sun {
     color: var(--font-color);
     cursor: pointer;
   }
-  .caixa .menu{
+  .caixa .menu {
     display: inline-block;
   }
+
   .caixa nav {
-    display: none;
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 100vh;
+    top: 20vh;
+    left: 50%;
+    text-align: center;
+    background-color: var(--background-color);
+    transition: 0.5s;
   }
+  .caixa nav li {
+    align-items: left;
+    display: block;
+    margin: 1rem;
+    font-size: 40px;
+    transition: 0.5s;
+  }
+
   .caixa img {
     display: inline-block;
   }
+
 }
