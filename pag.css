@@ -42,6 +42,9 @@ header {
   align-items: center;
 }
 
+.caixa .menu{
+display: none;
+}
 .Sites{
   margin-right: 10px;
 }
@@ -189,17 +192,17 @@ p strong {
   text-decoration: underline;
 }
 
-.botao {
+footer .botao {
   display: flex;
   margin-top: 1em;
   justify-content: center;
 }
-.checkbox {
+footer .checkbox {
   opacity: 0;
   position: absolute;
 }
 
-label {
+footer label {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -213,7 +216,7 @@ label {
   transform: scale(1.2);
 }
 
-label .ball {
+footer label .ball {
   border-radius: 10px;
   background-color: var(--background-color);
   position: absolute;
@@ -223,17 +226,17 @@ label .ball {
   transition: 0.5s;
 }
 
-.checkbox:checked + label .ball {
+footer .checkbox:checked + label .ball {
   transform: translateX(left);
 }
 
-label i {
+footer label i {
   color: var(--background-color);
 }
-.fa-moon {
+footer .fa-moon {
   color: var(--titulo);
 }
-.fa-sun {
+footer .fa-sun {
   color: var(--background-color);
 }
 
@@ -251,6 +254,9 @@ label i {
     display: inline-block;
     color: var(--font-color);
     cursor: pointer;
+  }
+  .caixa .menu{
+    display: inline-block;
   }
   .caixa nav {
     display: none;

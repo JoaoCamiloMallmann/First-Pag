@@ -1,7 +1,5 @@
-const $html = document.querySelector('html')
+const $html = document.querySelector("html");
 
-chk.addEventListener('change',() => {
-
- $html.classList.toggle('light-mode')
- 
-})
+Botaou.addEventListener("change", () => {
+  $html.classList.toggle("light-mode");
+});
