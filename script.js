@@ -1,5 +1,6 @@
 const $html = document.querySelector("html");
 const $nav = document.querySelector("nav");
+const $header = document.querySelector("header");
 
 Botaou.addEventListener("change", () => {
   $html.classList.toggle("light-mode");
@@ -7,4 +8,5 @@ Botaou.addEventListener("change", () => {
 
 check.addEventListener("change", () => {
   $nav.classList.toggle("desativado");
+ 
 });
