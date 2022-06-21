@@ -160,7 +160,6 @@ header {
   color: var(--font-color);
   font-size: 30px;
   font-weight: 600;
-  
 }
 
 #LogoMenu:checked ~ .caixa nav {
@@ -264,19 +263,28 @@ footer .fa-sun {
     display: inline-block;
   }
 
-  .caixa nav {
+  #check {
+    display: none;
+  }
+
+  .desativado {
+    left: 50%;
+  }
+
+  nav {
     position: fixed;
     display: block;
     width: 50%;
     height: 100vh;
     top: 20vh;
-    left: 50%;
+    left: 100%;
     text-align: center;
     background-color: var(--background-color);
     transition: 0.5s;
   }
   .caixa nav li {
     align-items: left;
+    justify-content: center;
     display: block;
     margin: 1rem;
     font-size: 40px;
@@ -286,5 +294,4 @@ footer .fa-sun {
   .caixa img {
     display: inline-block;
   }
-
 }
