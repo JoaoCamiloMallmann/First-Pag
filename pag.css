@@ -168,6 +168,8 @@ header {
   left: 100%;
 }
 
+
+
 /*----------------------------------- FOOTER -------------------------------------------*/
 
 footer div {
@@ -261,6 +263,7 @@ footer .fa-sun {
     display: inline-block;
     color: var(--font-color);
     cursor: pointer;
+    margin-right: 1rem;
   }
   .caixa .menu {
     display: inline-block;
