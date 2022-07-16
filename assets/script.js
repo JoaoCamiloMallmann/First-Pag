@@ -8,5 +8,5 @@ Botaou.addEventListener("change", () => {
 
 check.addEventListener("change", () => {
   $nav.classList.toggle("desativado");
- 
+  $header.classList.toggle("Fixo");
 });

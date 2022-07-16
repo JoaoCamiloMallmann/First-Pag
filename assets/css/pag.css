@@ -27,21 +27,25 @@ body {
 /* -------------------------------- HEADER ---------------------------------- */
 
 header {
-  height: 25%;
   background-color: var(--background-color);
   border-bottom: 5px groove var(--border-color);
 }
 .logo {
   display: inline-block;
-  width: 140px;
+  height: 160px;
   padding: 20px;
 }
 .caixa {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 
+/*.Fixo{
+  position: fixed;
+}
+*/
 .caixa .menu {
   display: none;
 }
@@ -265,6 +269,11 @@ footer .fa-sun {
     cursor: pointer;
     margin-right: 1rem;
   }
+  .logo {
+    display: inline-block;
+    height: 70px;
+    padding: 20px;
+  }
   .caixa .menu {
     display: inline-block;
   }
@@ -274,7 +283,7 @@ footer .fa-sun {
   }
 
   .desativado {
-    left: 0%;
+    left: 100%;
     transition: 1s;
   }
 
@@ -284,7 +293,7 @@ footer .fa-sun {
     width: 100%;
     height: 100vh;
     top: 20vh;
-    left: 100%;
+    left: 0%;
     text-align: center;
     background-color: var(--background-color);
     transition: 1s;
